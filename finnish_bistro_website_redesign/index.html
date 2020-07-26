@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Finnish Bistro</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="https://use.typekit.net/txx6fvh.css">
+    <link rel="icon" type="image/png" href="images/favicons_16px.png">
+
+</head>
+<body style="text-align:center">
+
+    <div class="topnavbar">
+        <a href="menus.html" class="navline">MENUS</a>
+        <a href="catering.html" class="navlinecat">CATERING</a>
+        <a href="index.html"><img id=logo src="images/new%20logo_3.png" alt="The Finnish Bistro logo"></a>
+       <a href="events.html" class="navline">EVENTS</a>
+       <a href="about.html" class="navline">ABOUT</a>
+    </div> <!-- TOP NAV ENDS HERE-->
+
+<div class="main">
+
+    <img class=mySlides src="images/food-cover-crop.png" alt="Food from The Finnish Bistro">
+    <img class=mySlides src="images/ppl-cover-crop.png" alt="The interior of The Finnish Bistro">
+    <img class=mySlides src="images/exterior-cover-crop.png" alt="The exterior of The Finnish Bistro">
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 4 seconds
+        }
+    </script>
+
+    <div class="bottomnavbar_home">
+        <footer>
+
+            <span class="storeinfo">
+                2264 Como Avenue <br>
+                St. Paul, MN 55108
+            </span>
+            <span class="storeinfo">
+               Daily Hours <br>
+               6:30 AM – 8:30 PM
+            </span>
+            <span class="storeinfo">
+                651-645-9181 <br>
+                info@finnishbistro.com
+            </span>
+
+            <span>
+        <a href="menus.html">MENUS</a>
+        <a href="catering.html">CATERING</a>
+        <a href="events.html">EVENTS</a>
+        <a href="about.html">ABOUT</a>
+            </span>
+
+            <span id="social">
+            <a href="https://www.facebook.com/thefinnishbistro" target="_blank"><img src="images/facebook-128.png" alt="Facebook icon" class="social"></a>
+            <a href="https://www.instagram.com/thefinnishbistro/" target="_blank"><img src="images/insta-128.png" alt="Instagram icon" class="social"></a>
+            <a href="https://twitter.com/finnishbistro" target="_blank"><img src="images/twitter-128.png" alt="Twitter icon" class="social"></a>
+            </span>
+
+        </footer>
+    </div> <!-- BOTTOM NAV ENDS HERE-->
+
+</div> <!-- MAIN DIV ENDS HERE -->
+</body>
+</html>

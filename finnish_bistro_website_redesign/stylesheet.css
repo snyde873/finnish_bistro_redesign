@@ -1,0 +1,263 @@
+/* The navigation bar */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.topnavbar {
+    overflow: hidden;
+    background-color: #f2f2f2;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Links inside the navbar */
+.topnavbar a {
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 80px;
+    text-decoration: none;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a.navline:hover {
+    color: #2b59a8;
+}
+
+
+
+/*hover underline effect for navigation links*/
+a.navline:before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 2px;
+    bottom: 15px;
+    background-color: #FFCE6D;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a.navline:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+
+
+
+a.navlinecat:hover {
+    color: #2b59a8;
+}
+
+/*hover underline effect for CATERING links because it's LONGER*/
+a.navlinecat:before {
+    content: "";
+    position: absolute;
+    width: 77px;
+    height: 2px;
+    bottom: 15px;
+    background-color: #FFCE6D;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a.navlinecat:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+
+#logo {
+    width: 200px;
+    height: 132px;
+}
+
+.main {
+    margin-top: 200px; /* Add a top margin to avoid content overlay */
+}
+
+.mySlides {
+    width: 100%;
+    height: 100%;
+}
+
+.bottomnavbar_home {
+    padding: 30px;
+}
+
+.storeinfo {
+    font-size: 10px;
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bottomnavbar_home a {
+    font-size: 12px;
+    color: black;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.bottomnavbar_home a:hover {
+    color: #2b59a8
+}
+
+#social {
+    display:inline;
+    float: right;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+}
+
+#social a:hover {
+    opacity: 0.5;
+}
+
+/* HOME PAGE ENDS HERE */
+/* MENU PAGE BEGINS HERE */
+
+/*#menu_nav {*/
+/*    !*text-decoration: underline 2px #2b59a8;*!*/
+/*    border-bottom: solid;*/
+/*    padding-bottom: 5px;*/
+/*    border-color: #2b59a8;*/
+/*}*/
+
+.vertical-menu {
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.vertical-menu a {
+    color: darkgray;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    color: black;
+    border-style: solid;
+    border-color: #FFCE6D;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+#menu_headers {
+    float: right;
+    color: black;
+    font-family: Finlandica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 250px;
+    margin-top: 20px;
+}
+
+td {
+    padding: 15px 30px;
+}
+
+#topbutton {
+    position: fixed;
+    bottom: 130px;
+    right: 130px;
+}
+
+.bottomnavbar_menus {
+    padding: 30px;
+    margin-top: 2100px;
+}
+
+.bottomnavbar_menus a {
+    font-size: 12px;
+    color: black;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.bottomnavbar_menus a:hover {
+    color: #2b59a8
+}
+
+/* MENU PAGE ENDS HERE */
+/* CATERING PAGE BEGINS HERE */
+
+
+#catering_title {
+    font-family: Finlandica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.catering_categ {
+    text-align: center;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    text-decoration-line: none;
+}
+
+.caterimg {
+    border-radius: 8px;
+}
+
+.column {
+    float: left;
+    margin-left: 177px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    padding-bottom: 58px;
+}
+
+#bday {
+    background: #FFCE6D;
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+a#bday:hover {
+    background: #2b59a8;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
